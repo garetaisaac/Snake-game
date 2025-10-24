@@ -1,26 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Snake Game</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malawi News Today - The Warm Heart's Headlines</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Traditional news look */
+            margin: 0;
+            background-color: #e6e6fa; /* Light lavender background */
+            color: #333;
+        }
+        header {
+            background-color: #008000; /* Green - one of Malawi's flag colors */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff0000; /* Red - another flag color */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 960px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: #0056b3; /* Blue for strong headings */
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .news-article {
+            border-bottom: 1px dashed #ccc;
+            padding: 20px 0;
+        }
+        .news-article:last-child {
+            border-bottom: none;
+        }
+        .category {
+            font-weight: bold;
+            color: #ff4500; /* Orange-red for emphasis */
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+        }
+        .headline-link {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 1.35em;
+            line-height: 1.5;
+            display: block;
+            font-weight: bold;
+        }
+        .headline-link:hover {
+            color: #008000; /* Green on hover */
+            text-decoration: underline;
+        }
+        .summary {
+            margin-top: 5px;
+            color: #555;
+            font-size: 0.95em;
+        }
+    </style>
 </head>
 <body>
-	<div id="game-container">
-		<canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
-	</div>
-	<div class="keys">
-	  <a class="up arr" onclick="Snake.action('up')">
-	    <i class="chevron up"></i></a>
-	  <br />
-	  <a class="left arr" onclick="Snake.action('left')">
-	    <i class="chevron left"></i></a>
-	  <a class="down arr" onclick="Snake.action('down')">
-	    <i class="chevron down"></i></a>
-	  <a class="right arr" onclick="Snake.action('right')">
-	    <i class="chevron right"></i></a>
-	</div>
-	<script type="text/javascript" src="game.js"></script>
+
+    <header>
+        <h1>Malawi Today 🇲🇼</h1>
+        <p>Your News from the Warm Heart of Africa | **Friday, October 24, 2025**</p>
+    </header>
+
+    <div class="container">
+        <h2>Top National Headlines</h2>
+        
+        <div class="news-article">
+            <span class="category">Economy & Development</span>
+            <h3>
+                <a href="#" class="headline-link">Malawi Bans Export of Raw Materials in Mining Industry</a>
+            </h3>
+            <p class="summary">The ban aims to boost local processing and is projected to earn the country up to $500 million a year from sites like Kasiya and Kangankunde.</p>
+        </div>
+
+        <div class="news-article">
+            <span class="category">Labour & Wages</span>
+            <h3>
+                <a href="#" class="headline-link">MCTU Pushes for 100% Minimum Wage Hike Amidst Fiscal Crisis</a>
+            </h3>
+            <p class="summary">The Malawi Congress of Trade Unions has formally demanded a doubling of the minimum wage to address the sharply rising cost of living and inflation.</p>
+        </div>
+
+        <div class="news-article">
+            <span class="category">Politics & Civil Service</span>
+            <h3>
+                <a href="#" class="headline-link">Civil Service Leadership Undergoes Major Shake-up at Capital Hill</a>
+            </h3>
+            <p class="summary">The Office of the President and Cabinet (OPC) has implemented wide-ranging changes, signaling a drive to reform and reorganize key government departments.</p>
+        </div>
+
+        <div class="news-article">
+            <span class="category">Social Crisis & Humanitarian Aid</span>
+            <h3>
+                <a href="#" class="headline-link">Refugees in Dzaleka Camp Fear Closure as Critical Aid is Slashed</a>
+            </h3>
+            <p class="summary">With deep funding cuts causing aid agencies to withdraw services, refugees plead to be remembered as security and living conditions deteriorate.</p>
+        </div>
+        
+        <div class="news-article">
+            <span class="category">Environment & Conservation</span>
+            <h3>
+                <a href="#" class="headline-link">African Parks Unveils New Strategic Plans for Nkhotakota Wildlife Reserve</a>
+            </h3>
+            <p class="summary">The conservation body announced its next phase of development and protection efforts for the critical wildlife sanctuary in the central region.</p>
+        </div>
+        
+    </div>
+
 </body>
-</html>
+				</html>
+				
